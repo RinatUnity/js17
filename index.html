@@ -9,31 +9,33 @@
     
 </body>
 <script>
-  let sum1000;
-  for(let i =1; i<=1000 ; i++)
+  let sum1000 = 0;
+  for(let i = 1; i <= 1000 ; i++)
   {
     sum1000 = sum1000 + i;
   }
   console.log(sum1000);
 
- let factorial = Math.round(Math.random()*(30-2) + 2);
-
- for(let i = 1; i <=30; i++)
+ let k = Math.round(Math.random()*(30-2) + 2);
+ let f = k;
+ let factorial = 1;
+ for(let i = 1; i <=f; i++)
  {
     factorial *= i;
  }
- console.log(`Факториал ${factorial}`);
+ 
+ console.log(`Факториал числа ${k} равен ${factorial}`);
 
  let sum = 0;
  let age = 10;
- let s = 0;
+ let s = 1;
  while(sum <= 60000)
  {
  sum =sum + 1000 + (s * 1200);
  s++;
  }
- age = age + s;
- console.log(`Через ${age } купит велосипед`);
+ 
+ console.log(`Через ${s} купит велосипед`);
 let word = "Огород";
 let word1 = "Шалаш";
 let z = "не ";
@@ -51,7 +53,7 @@ console.log(`Слово ${word1} ${z}являеться полиндромом`)
 
 let num = Math.round(Math.random()*30);
 let p = 3;
-let num2 ;
+let num2 = 0;
 
 
 while(num != (num2=prompt(`Угадай число,от 0 до 30 за ${p} попытки`)) && p > 1)
@@ -64,6 +66,7 @@ while(num != (num2=prompt(`Угадай число,от 0 до 30 за ${p} по
             
 }
 num == num2 ?
-console.log("Угадал ${num}"):console.log(`Не угадал, загадонное число ${num}`);
+console.log(`Угадал ${num}`):console.log(`Не угадал, загадонное число ${num}`);
+
 </script>
 </html>
